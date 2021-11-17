@@ -18,9 +18,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //Rutas
-app.use("/api/events", require("./routes/events")); // todo lo que este archivo va a exportar lo va a habilitar en esta ruta
+app.use("/api/events", require("./routes/events"));
 
-// escuchar las peticiones: en que puerto lo vamos a levantar
 app.listen(process.env.PORT, () => {
   console.log(`Servidor corriendo en puerto ${4000} `);
 });

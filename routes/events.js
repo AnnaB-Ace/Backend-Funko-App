@@ -27,3 +27,6 @@ router.put("/:id", actualizarEvento);
 router.delete("/:id", eliminarEvento);
 
 module.exports = router;
+
+
+// /api/events/345678908765
